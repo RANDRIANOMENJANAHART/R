@@ -1,0 +1,104 @@
+html{
+    scroll-behavior: smooth;
+}
+main{
+    display: flex;
+    background-color: $secondary-color;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 900px;
+    background-color: $primary-color;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: left 0.3s ease;
+    z-index: 10;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+            img{
+               height: 180px;
+               width: 110px;
+               align-items: center;
+               margin-right: 40px;
+               border-radius: 20px;
+               
+               
+               nav {
+                margin-top: 20px;
+            
+                 p a {
+                  display: block;
+                  color: #fff;
+                  text-decoration: none;
+                  margin: 10px 0;
+                  font-weight: bold;
+            
+                  &:hover {
+                    color: $text-color;
+                  }
+                }
+              }
+            } 
+            }
+.container1 {
+    @include flex-center;
+}
+.container2 {
+    @include flex-center;
+}
+.container3 {
+    @include flex-center;
+}
+.container4 {
+    @include flex-center;
+}
+.border{ 
+    @include shadow;
+    padding-left: 30px;
+   
+}
+.border1{
+    height: 80px;
+    width: 99%;
+    background: $box-shadow;
+    border-radius: 20px;
+    text-align: center;
+}
+section{
+    display: flex;
+    padding-left: 90px;
+}
+.const1 {
+    @include border;
+}
+.const2 {
+    @include border;
+}
+.const3 {
+    @include border;
+}
+.box{
+    background-color: $text-color;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+.element2{
+    padding-top: 40px;
+    font-size: 25px;
+    padding-right: 50px;
+    i{
+        @include box-container;
+
+    }
+}
+
+
